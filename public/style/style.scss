@@ -1,0 +1,12 @@
+@import "variables";
+@import "header";
+@import "main";
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $c-white;
+}

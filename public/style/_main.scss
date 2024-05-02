@@ -1,0 +1,25 @@
+@import "variables";
+
+.main{
+    width: 80vw;
+    margin: 0 auto;
+
+    &-title{
+        text-align: center;
+    }
+
+    &-text{
+        font-size: 1.1rem;
+    }
+
+    &-btn{
+        display: block;
+        font-size: 1.5rem;
+        padding: .5rem 3rem;
+        margin: 0 auto;
+        color: $c-mustard;
+        background-color: $c-burgundy;
+        border-color: none;
+        outline: none;
+    }
+}

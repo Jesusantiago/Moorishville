@@ -1,0 +1,23 @@
+{
+  "name": "moorishville",
+  "version": "1.0.0",
+  "description": "Moorishville site",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "npx sass --watch public/style/style.scss:index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesusantiago/Moorishville.git"
+  },
+  "author": "Jesus Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesusantiago/Moorishville/issues"
+  },
+  "homepage": "https://github.com/Jesusantiago/Moorishville#readme",
+  "devDependencies": {
+    "sass": "^1.76.0"
+  }
+}
