@@ -21,5 +21,11 @@
         background-color: $c-burgundy;
         border-color: none;
         outline: none;
+        cursor: pointer;
+        border-radius: 7px;
+
+        &:hover{
+            color: $c-dandelion;
+        }
     }
 }

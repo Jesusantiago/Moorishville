@@ -59,6 +59,11 @@
   background-color: #6d0606;
   border-color: none;
   outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.main-btn:hover {
+  color: #f6c202;
 }
 
 * {
