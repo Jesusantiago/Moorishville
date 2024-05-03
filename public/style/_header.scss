@@ -6,8 +6,6 @@
     max-height: 8rem;
     background-color: $c-burgundy;
 
-
-
     &_logo {
         width: 8rem;
         height: 8rem;
@@ -33,6 +31,7 @@
             font-size: 1.5rem;
             line-height: 2rem;
             color: $c-yellovv;
+            font-family: $f-arapey;
             text-align: center;
             letter-spacing: .2rem;
             margin: 0;
@@ -42,6 +41,8 @@
         &-span {
             color: $c-white;
             font-size: 1.3rem;
+            margin-bottom: .5rem;
+            font-family: $f-mont;
         }
     }
 

@@ -29,6 +29,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   color: #bb991d;
+  font-family: "Arapey", serif;
   text-align: center;
   letter-spacing: 0.2rem;
   margin: 0;
@@ -37,6 +38,8 @@
 .header_text-span {
   color: #f2f2f2;
   font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main {
@@ -49,9 +52,12 @@
 }
 .main-title {
   text-align: center;
+  font-family: "Arapey", serif;
 }
 .main-text {
   font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 .main a {
   text-decoration: none;
@@ -68,6 +74,7 @@
   cursor: pointer;
   border-radius: 7px;
   margin-top: 2.5rem;
+  font-family: "Arapey", serif;
 }
 .main-btn:hover {
   color: #f6c202;
@@ -101,6 +108,47 @@
   .main-btn {
     display: none;
   }
+}
+
+.main-content {
+  margin: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-content-nav {
+  width: 100%;
+  height: 2rem;
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6d0606;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #bb991d;
+}
+.main-content-nav form {
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+.main-content-text {
+  width: 70vw;
+}
+.main-content-text-title {
+  font-family: "Arapey", serif;
+  font-size: 1.5rem;
+  color: #6d0606;
+  text-align: center;
+}
+.main-content-text-p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 * {
