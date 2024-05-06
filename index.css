@@ -94,36 +94,6 @@
 .main-btn:hover {
   color: #f6c202;
 }
-@media screen and (max-width: 996px) {
-  .main {
-    position: relative;
-    background: #f2f2f2;
-    width: 100vw;
-    height: 70vh;
-    margin: 0;
-  }
-  .main_tablet {
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-    padding: 0 5rem;
-  }
-  .main_tablet-text {
-    text-align: center;
-    font-size: 3rem;
-  }
-  .main-title {
-    display: none;
-  }
-  .main-text {
-    display: none;
-  }
-  .main-btn {
-    display: none;
-  }
-}
 
 .main-content {
   margin: 0 8rem;
@@ -146,6 +116,7 @@
 }
 .main-content-btns form {
   display: flex;
+  max-width: 1200px;
   width: 100%;
   justify-content: space-between;
   color: #f2f2f2;
@@ -160,6 +131,9 @@
   display: inline-block;
   min-width: 6rem;
 }
+.main-content-btns form input {
+  cursor: pointer;
+}
 @media screen and (max-width: 576px) {
   .main-content-btns {
     display: none;
@@ -172,6 +146,7 @@
 }
 .main-content-btns-nav {
   width: 100%;
+  max-width: 1200px;
 }
 .main-content-btns-nav ul {
   width: 100%;
@@ -193,6 +168,10 @@
   background-color: #d8ae15;
   min-width: 140px;
   text-align: center;
+  cursor: pointer;
+}
+.main-content-btns-nav ul li:hover {
+  background-color: #f6c202;
 }
 .main-content-text {
   width: 70vw;
@@ -246,6 +225,30 @@
 @media screen and (max-width: 996px) {
   .main-content {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .main_tablet {
+    display: block;
+    width: 50vw;
+    height: 70%;
+    margin: 20% auto;
+    padding: 0 5rem;
+  }
+  .main_tablet-text {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(47, 46, 46);
+  }
+  .main-title {
+    display: none;
+  }
+  .main-text {
+    display: none;
+  }
+  .main-btn {
+    display: none;
   }
 }
 

@@ -17,11 +17,12 @@
         background: $c-burgundy;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-
-
-
+        
+        
+        
         form {
             display: flex;
+            max-width: 1200px;
             width: 100%;
             justify-content: space-between;
             // outline: 1px solid black ;
@@ -38,6 +39,10 @@
                 display: inline-block;
                 min-width: 6rem;
             }
+
+            input{
+                cursor: pointer;
+            }
         }
 
         @include mobile {
@@ -53,7 +58,7 @@
 
     &-btns-nav {
         width: 100%;
-
+        max-width: 1200px;
         ul {
             width: 100%;
             display: flex;
@@ -62,10 +67,11 @@
             margin: 0;
             padding: 0;
 
+            
             .active {
                 background-color: $c-dandelion;
             }
-
+            
             li {
                 text-decoration: none;
                 list-style: none;
@@ -75,8 +81,13 @@
                 background-color: $c-mustard;
                 min-width: 140px;
                 text-align: center;
+                cursor: pointer;
+                
+                &:hover{
+                    background-color: $c-dandelion;
+                }
             }
-
+            
         }
     }
 
