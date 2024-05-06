@@ -6,13 +6,14 @@
     justify-content: center;
 
 
-    &-nav {
+    &-btns {
         width: 100%;
-        height: 2rem;
-        padding: 1.6rem 2rem;
+        height: 8rem;
+        padding: 0 1rem;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         background: $c-burgundy;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -27,12 +28,61 @@
             color: $c-white;
             font-family: $f-mont;
             width: 100%;
+            gap: 3rem;
+
+            article {
+                min-width: 150px;
+            }
+
+            label {
+                display: inline-block;
+                min-width: 6rem;
+            }
         }
 
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+
+    }
+
+    &-btns-nav {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+
+            .active {
+                background-color: $c-dandelion;
+            }
+
+            li {
+                text-decoration: none;
+                list-style: none;
+                color: $c-burgundy;
+                padding: .5rem .3rem;
+                border-radius: 10px;
+                background-color: $c-mustard;
+                min-width: 140px;
+                text-align: center;
+            }
+
+        }
     }
 
     &-text {
         width: 70vw;
+        padding: 1rem 0 7rem;
 
         &-title {
             font-family: $f-arapey;
@@ -46,32 +96,52 @@
             font-family: $f-mont;
             font-weight: 300;
         }
+
+        @include tablet {
+            display: none;
+        }
+
     }
 
     &-results {
-        width: 80%;
+        width: 80vw;
         border-radius: 10px;
         margin-top: 3rem;
         background-color: rgba(180, 178, 175, 0.224);
-        padding: .5rem 2rem;
-        
+        padding: .5rem 1rem;
+
         thead {
             text-align: left;
             font-family: $f-arapey;
-            
+            font-size: 1.3rem;
+
         }
-        
+
         tbody {
             font-family: $f-mont;
 
-            tr{
+            tr {
                 height: 32px;
+                
             }
             
             tr:nth-child(even) {
-                    background-color: #c7c1c1;
-                  }
-
+                background-color: #8984846b;
             }
+            
+            .select{
+                width: 4rem;
+            }
+
+        }
+
+        @include tablet {
+            display: none;
         }
     }
+
+    @include tablet {
+        display: inline;
+
+    }
+}

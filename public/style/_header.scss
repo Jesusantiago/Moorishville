@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    max-height: 8rem;
+    max-height: 10rem;
     background-color: $c-burgundy;
 
     &_logo {
@@ -10,30 +10,46 @@
         background-color: $c-white;
 
         img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 8rem;
+            max-height: 8rem;
             object-fit: fill;
+        }
+
+        @include mobile {
+            width: 5em;
+            height: 5em;
+
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
         }
     }
 
     &_text {
+        width: 100%;
         max-height: 100%;
         background-color: $c-burgundy;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: .4rem 0;
 
         &-title {
             font-size: 1.5rem;
-            line-height: 2rem;
+            line-height: 1.8rem;
             color: $c-yellovv;
             font-family: $f-arapey;
             text-align: center;
             letter-spacing: .2rem;
             margin: 0;
             padding: 0;
+
+            @include mobile {
+                font-size: 14px;
+                line-height: 1rem;
+            }
         }
 
         &-span {
