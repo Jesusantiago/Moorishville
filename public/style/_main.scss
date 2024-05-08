@@ -9,13 +9,15 @@
 
     &-title{
         text-align: center;
+        font-weight: 600;
         font-family: $f-arapey;
+        color: $c-burgundy;
     }
 
     &-text{
         font-size: 1.1rem;
         font-family: $f-mont;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     a{
@@ -29,8 +31,6 @@
         margin: 0 auto;
         color: $c-mustard;
         background-color: $c-burgundy;
-        border-color: none;
-        outline: none;
         cursor: pointer;
         border-radius: 7px;
         margin-top: 2.5rem;
@@ -40,5 +40,4 @@
             color: $c-dandelion;
         }
     }
-
 }

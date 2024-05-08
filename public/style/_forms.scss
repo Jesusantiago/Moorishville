@@ -1,0 +1,54 @@
+.form-Real {
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+    font-family: $f-mont;
+    row-gap: 1rem;
+
+    article {
+        width: 40%;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        
+
+        .label-text {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            font-family: $f-arapey;
+
+            input{
+                border-radius: .5rem;
+                padding: .2rem .4rem;
+            }
+        }
+    }
+
+    button {
+        width: 90%;
+        height: 2.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: .5rem;
+        cursor: pointer;
+        font-family: $f-mont;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background-color: $c-white;
+
+
+        img {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}

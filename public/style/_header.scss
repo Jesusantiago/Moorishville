@@ -1,17 +1,21 @@
 .header {
     display: flex;
     justify-content: space-between;
-    max-height: 10rem;
+    max-height: 12rem;
     background-color: $c-burgundy;
 
+    @include tablet{
+        max-height: 5rem;
+    }
+
     &_logo {
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
         background-color: $c-white;
 
         img {
-            width: 8rem;
-            max-height: 8rem;
+            width: 10rem;
+            max-height: 10rem;
             object-fit: fill;
         }
 
@@ -33,8 +37,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        padding: .4rem 0;
+        justify-content: space-between;
 
         &-title {
             font-size: 1.5rem;
@@ -42,13 +45,66 @@
             color: $c-yellovv;
             font-family: $f-arapey;
             text-align: center;
-            letter-spacing: .2rem;
+            letter-spacing: .2em;
             margin: 0;
-            padding: 0;
+            padding:  1rem 0 0;
 
             @include mobile {
                 font-size: 14px;
                 line-height: 1rem;
+            }
+        }
+
+        &-nav {
+            width: 100%;
+
+            @include tablet{
+                display: none;
+            }
+            
+            ul {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // gap: 20px;
+                margin: 0;
+                padding: 0;
+                height: 3.5em;
+                
+                
+                .active {
+                    background-color: $c-dandelion;
+                    color: black;
+                }
+    
+                li {
+                    text-decoration: none;
+                    list-style: none;
+                    padding: .2rem .3rem;
+                    background-color: $c-mustard;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 1.17rem;
+                    // border-right: 1px solid black;
+                    // border-left: 1px solid black;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    a{
+                        text-decoration: none;
+                        color: $c-burgundy;
+                        
+                    }
+    
+                    &:hover {
+                        background-color: $c-dandelion;
+                    }
+                }
+    
             }
         }
 
@@ -57,6 +113,10 @@
             font-size: 1.3rem;
             margin-bottom: .5rem;
             font-family: $f-mont;
+
+            @include mobile{
+                display: none;
+            }
         }
     }
 

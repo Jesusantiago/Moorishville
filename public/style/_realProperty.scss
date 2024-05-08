@@ -1,5 +1,5 @@
 .main-content {
-    margin: 0 8rem;
+    margin: 0 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,42 +8,15 @@
 
     &-btns {
         width: 100%;
-        height: 8rem;
-        padding: 0 1rem;
+        height: auto;
+        padding: 0 0 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background: $c-burgundy;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        
-        
-        
-        form {
-            display: flex;
-            max-width: 1200px;
-            width: 100%;
-            justify-content: space-between;
-            // outline: 1px solid black ;
-            color: $c-white;
-            font-family: $f-mont;
-            width: 100%;
-            gap: 3rem;
-
-            article {
-                min-width: 150px;
-            }
-
-            label {
-                display: inline-block;
-                min-width: 6rem;
-            }
-
-            input{
-                cursor: pointer;
-            }
-        }
 
         @include mobile {
             display: none;
@@ -58,60 +31,51 @@
 
     &-btns-nav {
         width: 100%;
-        max-width: 1200px;
+        
         ul {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            // gap: 20px;
             margin: 0;
             padding: 0;
-
+            height: 4rem;
+            
             
             .active {
                 background-color: $c-dandelion;
+                color: black;
             }
-            
+
             li {
                 text-decoration: none;
                 list-style: none;
-                color: $c-burgundy;
-                padding: .5rem .3rem;
-                border-radius: 10px;
+                padding: .2rem .3rem;
                 background-color: $c-mustard;
-                min-width: 140px;
                 text-align: center;
                 cursor: pointer;
+                font-size: 1.17rem;
+                border-right: 1px solid black;
+                border-left: 1px solid black;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 
-                &:hover{
+                a{
+                    text-decoration: none;
+                    color: $c-burgundy;
+                    
+                }
+
+                &:hover {
                     background-color: $c-dandelion;
                 }
             }
-            
+
         }
-    }
-
-    &-text {
-        width: 70vw;
-        padding: 1rem 0 7rem;
-
-        &-title {
-            font-family: $f-arapey;
-            font-size: 1.5rem;
-            color: $c-burgundy;
-            text-align: center;
-        }
-
-        &-p {
-            font-size: 1.1rem;
-            font-family: $f-mont;
-            font-weight: 300;
-        }
-
-        @include tablet {
-            display: none;
-        }
-
     }
 
     &-results {
@@ -133,14 +97,14 @@
 
             tr {
                 height: 32px;
-                
+
             }
-            
+
             tr:nth-child(even) {
                 background-color: #8984846b;
             }
-            
-            .select{
+
+            .select {
                 width: 4rem;
             }
 
@@ -151,8 +115,4 @@
         }
     }
 
-    @include tablet {
-        display: inline;
-
-    }
 }
