@@ -276,7 +276,9 @@
 }
 
 .form-Real,
-.form-OldIndexBooks {
+.form-OldIndexBooks,
+.form-ImagesOfText,
+.form-VitalRecords {
   width: 80%;
   max-width: 1200px;
   padding: 2rem 0;
@@ -288,29 +290,40 @@
   font-family: "Montserrat", sans-serif;
   row-gap: 1rem;
 }
-.form-Real article,
-.form-OldIndexBooks article {
+.form-Real .article,
+.form-OldIndexBooks .article,
+.form-ImagesOfText .article,
+.form-VitalRecords .article {
   width: 34%;
   font-size: 1.3rem;
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
 }
-.form-Real article .label-text,
-.form-OldIndexBooks article .label-text {
+.form-Real .article .label-text,
+.form-OldIndexBooks .article .label-text,
+.form-ImagesOfText .article .label-text,
+.form-VitalRecords .article .label-text {
   width: 90%;
   display: flex;
   flex-direction: column;
   font-family: "Arapey", serif;
 }
-.form-Real article .label-text input,
-.form-OldIndexBooks article .label-text input {
+.form-Real .article .label-text input, .form-Real .article .label-text select,
+.form-OldIndexBooks .article .label-text input,
+.form-OldIndexBooks .article .label-text select,
+.form-ImagesOfText .article .label-text input,
+.form-ImagesOfText .article .label-text select,
+.form-VitalRecords .article .label-text input,
+.form-VitalRecords .article .label-text select {
   border-radius: 0.5rem;
   margin-top: 0.3rem;
   padding: 0.2rem 0.4rem;
 }
 .form-Real button,
-.form-OldIndexBooks button {
+.form-OldIndexBooks button,
+.form-ImagesOfText button,
+.form-VitalRecords button {
   width: 70%;
   height: 2.7rem;
   display: flex;
@@ -324,7 +337,9 @@
   background-color: #f2f2f2;
 }
 .form-Real button img,
-.form-OldIndexBooks button img {
+.form-OldIndexBooks button img,
+.form-ImagesOfText button img,
+.form-VitalRecords button img {
   cursor: pointer;
   width: 16px;
   height: 16px;
