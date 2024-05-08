@@ -278,7 +278,8 @@
 .form-Real,
 .form-OldIndexBooks,
 .form-ImagesOfText,
-.form-VitalRecords {
+.form-VitalRecords,
+.form-MarriageRecords {
   width: 80%;
   max-width: 1200px;
   padding: 2rem 0;
@@ -293,7 +294,8 @@
 .form-Real .article,
 .form-OldIndexBooks .article,
 .form-ImagesOfText .article,
-.form-VitalRecords .article {
+.form-VitalRecords .article,
+.form-MarriageRecords .article {
   width: 34%;
   font-size: 1.3rem;
   padding-left: 2rem;
@@ -303,7 +305,8 @@
 .form-Real .article .label-text,
 .form-OldIndexBooks .article .label-text,
 .form-ImagesOfText .article .label-text,
-.form-VitalRecords .article .label-text {
+.form-VitalRecords .article .label-text,
+.form-MarriageRecords .article .label-text {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -315,7 +318,9 @@
 .form-ImagesOfText .article .label-text input,
 .form-ImagesOfText .article .label-text select,
 .form-VitalRecords .article .label-text input,
-.form-VitalRecords .article .label-text select {
+.form-VitalRecords .article .label-text select,
+.form-MarriageRecords .article .label-text input,
+.form-MarriageRecords .article .label-text select {
   border-radius: 0.5rem;
   margin-top: 0.3rem;
   padding: 0.2rem 0.4rem;
@@ -323,7 +328,8 @@
 .form-Real button,
 .form-OldIndexBooks button,
 .form-ImagesOfText button,
-.form-VitalRecords button {
+.form-VitalRecords button,
+.form-MarriageRecords button {
   width: 70%;
   height: 2.7rem;
   display: flex;
@@ -339,7 +345,8 @@
 .form-Real button img,
 .form-OldIndexBooks button img,
 .form-ImagesOfText button img,
-.form-VitalRecords button img {
+.form-VitalRecords button img,
+.form-MarriageRecords button img {
   cursor: pointer;
   width: 16px;
   height: 16px;
