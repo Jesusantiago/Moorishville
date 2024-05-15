@@ -5,16 +5,19 @@ console.log("realPropety")
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name-real").value.toLowerCase()
-    const date = document.getElementById("date-real").value
-    const grantor = document.getElementById("grantor-real").checked
-    const grantee = document.getElementById("grantee-real").checked
-    const mixed = document.getElementById("mixed-real").checked
-    const temporary = document.getElementById("temporary-real").checked
-    const either = document.getElementById("either-real").checked
+    const name = document.getElementById("name-real").value.toLowerCase();
+    const startDate = document.getElementById("start-date-real").value;
+    const endDate = document.getElementById("end-date-real").value;
+    const grantor = document.getElementById("grantor-real").checked;
+    const grantee = document.getElementById("grantee-real").checked;
+    const mixed = document.getElementById("mixed-real").checked;
+    const temporary = document.getElementById("temporary-real").checked;
+    const either = document.getElementById("either-real").checked;
 
-    if (!name && !date && !grantor && !grantee && !mixed && !temporary && !either) {
-        showModal()
+    console.log(endDate)
+
+    if (!name && !startDate && !endDate && !grantor && !grantee && !mixed && !temporary && !either) {
+        showModal("incompleteFormModal")
         return;
     }
 
@@ -30,7 +33,8 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
 
             let search = {
                 name,
-                date,
+                startDate,
+                endDate,
                 condition: { grantor, grantee },
                 time: { mixed, temporary, either }
             }
@@ -38,7 +42,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
 
             const results = jsonData.filter(item => {
                 const nameMatch = !search.name || item.Name.toLowerCase().includes(search.name)
-                const dateMatch = !search.date || item.date === search.date;
+                const dateMatch = (!search.startDate || new Date(item.date) >= new Date(search.startDate)) && (!search.endDate || new Date(item.date) <= new Date(search.endDate));
                 const conditionMatch = (grantor && item.grantor) || (grantee && item.grantee);
                 const timeMatch = (mixed && item.mixed) || (temporary && item.temporary) || (either && item.either);
 
@@ -47,6 +51,15 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             })
             console.log(results)
 
+            // Verificar si no se encontraron resultados
+            if (results.length === 0) {
+                showModal("noResultsModal");
+            } else {
+                // Mostrar resultados en la tabla
+                displayResults(results);
+            }
+
+            document.getElementById("discreimer").style.display = "none"
             displayResults(results);
         })
         .catch(err => console.error(err.message))
