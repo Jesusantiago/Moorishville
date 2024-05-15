@@ -51,16 +51,13 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             })
             console.log(results)
 
-            // Verificar si no se encontraron resultados
             if (results.length === 0) {
                 showModal("noResultsModal");
             } else {
-                // Mostrar resultados en la tabla
                 displayResults(results);
+                document.getElementById("discreimer").style.display = "none"
             }
 
-            document.getElementById("discreimer").style.display = "none"
-            displayResults(results);
         })
         .catch(err => console.error(err.message))
 

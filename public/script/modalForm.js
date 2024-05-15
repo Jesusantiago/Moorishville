@@ -4,11 +4,13 @@ const showModal = (modalID) => {
     const modal = document.getElementById(modalID);
     modal.style.display = "block";
 
-    const span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-    console.log(span)
+    const spans = modal.getElementsByClassName("close");
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].onclick = function() {
+                modal.style.display = "none";
+            }
+        }
+    console.log(spans)
 
     window.onclick = function(event) {
         if (event.target == modal) {
