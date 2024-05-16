@@ -14,13 +14,10 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const temporary = document.getElementById("temporary-real").checked;
     const either = document.getElementById("either-real").checked;
 
-    console.log(endDate)
-
     if (!name && !startDate && !endDate && !grantor && !grantee && !mixed && !temporary && !either) {
         showModal("incompleteFormModal")
         return;
     }
-
 
     fetch("../Backout/realProperty.json")
         .then(response => {
@@ -38,7 +35,6 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
                 condition: { grantor, grantee },
                 time: { mixed, temporary, either }
             }
-            console.log(search.name)
 
             const results = jsonData.filter(item => {
                 const nameMatch = !search.name || item.Name.toLowerCase().includes(search.name)
@@ -46,10 +42,8 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
                 const conditionMatch = (grantor && item.grantor) || (grantee && item.grantee);
                 const timeMatch = (mixed && item.mixed) || (temporary && item.temporary) || (either && item.either);
 
-                console.log(nameMatch, dateMatch, conditionMatch, timeMatch)
                 return nameMatch && dateMatch && conditionMatch && timeMatch
             })
-            console.log(results)
 
             if (results.length === 0) {
                 showModal("noResultsModal");
@@ -60,6 +54,4 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
 
         })
         .catch(err => console.error(err.message))
-
-
 })

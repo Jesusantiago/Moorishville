@@ -21,6 +21,8 @@ const displayResults = (results) => {
         link.innerText = "See Document";
         fileCell.appendChild(link);
     });
+
+    document.getElementById('resultsTable').scrollIntoView({ behavior: 'smooth' });
 }
 
 export default displayResults;
