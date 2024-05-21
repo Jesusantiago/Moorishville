@@ -1,11 +1,13 @@
 import showModal from "./modalForm.js";
 import displayResults from "./table.js"
-console.log("realPropety")
+// import formValidator from "./validationData.js";
+
+
 
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault();
-
-    const name = document.getElementById("name-real").value.toLowerCase();
+    // const form = document.getElementById("form")
+    const name = document.getElementById("name").value.toLowerCase();
     const startDate = document.getElementById("start-date-real").value;
     const endDate = document.getElementById("end-date-real").value;
     const grantor = document.getElementById("grantor-real").checked;
@@ -14,7 +16,19 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const temporary = document.getElementById("temporary-real").checked;
     const either = document.getElementById("either-real").checked;
 
-    if (!name && !startDate && !endDate && !grantor && !grantee && !mixed && !temporary && !either) {
+    const fieldID = ["name"]
+
+    // const validate = new formValidator(form, fieldID)
+
+    // validate.initialize()
+
+    const isEmptyName = !name;
+    const isEmptyStartDate = !startDate;
+    const isEmptyEndDate = !endDate;
+    const isConditionUnchecked = !grantor && !grantee;
+    const isTimeUnchecked = !mixed && !temporary && !either
+
+    if (isEmptyName || isEmptyStartDate || isEmptyEndDate || isConditionUnchecked || isTimeUnchecked) {
         showModal("incompleteFormModal")
         return;
     }
@@ -27,7 +41,6 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             return response.json()
         })
         .then(jsonData => {
-
             let search = {
                 name,
                 startDate,
@@ -37,7 +50,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             }
 
             const results = jsonData.filter(item => {
-                const nameMatch = !search.name || item.Name.toLowerCase().includes(search.name)
+                const nameMatch = !search.name || item.name.toLowerCase().includes(search.name)
                 const dateMatch = (!search.startDate || new Date(item.date) >= new Date(search.startDate)) && (!search.endDate || new Date(item.date) <= new Date(search.endDate));
                 const conditionMatch = (grantor && item.grantor) || (grantee && item.grantee);
                 const timeMatch = (mixed && item.mixed) || (temporary && item.temporary) || (either && item.either);

@@ -48,21 +48,18 @@
 
         <section class="main-content-form">
 
-            <form action="" class="form-Real">
+            <form class="form-Real" id="form">
 
                 <article class="article">
                     <label class="label-text" for="name-real">Name:
-                        <input type="text" name="name-real" id="name-real" placeholder="Enter your name" autofocus>
+                        <input type="text" name="name-real" id="name" placeholder="Enter your name" autofocus aria-required="true">
+                        <span id="span"></span>
                     </label>
                 </article>
 
                 <article class="article">
                     <label class="label-text" for="start-date-real">Date range:
                         <input type="date" name="start-date-real" id="start-date-real">
-                    </label>
-
-                    <label class="label-text" for="end-date-real">
-                        <input type="date" name="end-date-real" id="end-date-real">
                     </label>
                 </article>
 
@@ -75,6 +72,12 @@
                     <label for="grantee-real">
                         <input type="radio" name="condition" id="grantee-real" value="grantee">
                         Grantee
+                    </label>
+                </article>
+
+                <article class="article">
+                    <label class="label-text" for="end-date-real">
+                        <input type="date" name="end-date-real" id="end-date-real">
                     </label>
                 </article>
 
@@ -92,8 +95,8 @@
                     </label>
                 </article>
 
-                <button type="submit" id="searchButton"> <img src="../assets/1093183.svg" alt="Search's button"> Search
-                </button>
+                <input class="btn" type="submit" id="searchButton"> 
+                <!-- <img class="btn-img"src="../assets/1093183.svg" alt="Search's button">  -->
             </form>
         </section>
 
@@ -151,12 +154,6 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Date</th>
-                    <th>Grantor</th>
-                    <th>Grantee</th>
-                    <th>Mixed</th>
-                    <th>Temporary</th>
-                    <th>Either</th>
                     <th>File</th>
                 </tr>
             </thead>

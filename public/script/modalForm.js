@@ -10,7 +10,6 @@ const showModal = (modalID) => {
                 modal.style.display = "none";
             }
         }
-    console.log(spans)
 
     window.onclick = function(event) {
         if (event.target == modal) {
