@@ -1,5 +1,5 @@
 import showModal from "./modalForm.js";
-import displayResults from "./table.js"
+import { displayResultsReal } from "./table.js"
 // import formValidator from "./validationData.js";
 
 
@@ -15,6 +15,13 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const mixed = document.getElementById("mixed-real").checked;
     const temporary = document.getElementById("temporary-real").checked;
     const either = document.getElementById("either-real").checked;
+
+    const namePattern = /^[A-Za-z]+( [A-Za-z]+)?$/;
+
+    if(!namePattern.test(name)){
+        alert("Name input formt is incorrect.")
+        return;
+    }
 
     const fieldID = ["name"]
 
@@ -61,7 +68,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             if (results.length === 0) {
                 showModal("noResultsModal");
             } else {
-                displayResults(results);
+                displayResultsReal(results);
                 document.getElementById("discreimer").style.display = "none"
             }
 
