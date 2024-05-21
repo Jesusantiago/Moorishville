@@ -361,11 +361,33 @@
   margin-top: 0.3rem;
   padding: 0.2rem 0.4rem;
 }
-.form-Real button,
-.form-OldIndexBooks button,
-.form-ImagesOfText button,
-.form-VitalRecords button,
-.form-MarriageRecords button {
+.form-Real .article .error,
+.form-OldIndexBooks .article .error,
+.form-ImagesOfText .article .error,
+.form-VitalRecords .article .error,
+.form-MarriageRecords .article .error {
+  border: 4px solid rgb(246, 40, 40);
+}
+.form-Real .article .error span,
+.form-OldIndexBooks .article .error span,
+.form-ImagesOfText .article .error span,
+.form-VitalRecords .article .error span,
+.form-MarriageRecords .article .error span {
+  font-size: 0.85rem;
+  color: red;
+}
+.form-Real .article .green,
+.form-OldIndexBooks .article .green,
+.form-ImagesOfText .article .green,
+.form-VitalRecords .article .green,
+.form-MarriageRecords .article .green {
+  border: 1.5px solid green;
+}
+.form-Real .btn,
+.form-OldIndexBooks .btn,
+.form-ImagesOfText .btn,
+.form-VitalRecords .btn,
+.form-MarriageRecords .btn {
   width: 70%;
   height: 2.7rem;
   display: flex;
@@ -378,30 +400,33 @@
   border-radius: 10px;
   background-color: #f2f2f2;
 }
-.form-Real button img,
-.form-OldIndexBooks button img,
-.form-ImagesOfText button img,
-.form-VitalRecords button img,
-.form-MarriageRecords button img {
+.form-Real .btn-img,
+.form-OldIndexBooks .btn-img,
+.form-ImagesOfText .btn-img,
+.form-VitalRecords .btn-img,
+.form-MarriageRecords .btn-img {
   cursor: pointer;
   width: 16px;
   height: 16px;
 }
 
 table {
-  display: none;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table, th, td {
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 th, td {
-  padding: 10px;
+  width: 5%;
   text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+
+th {
+  background: #eee;
 }
 
 * {
