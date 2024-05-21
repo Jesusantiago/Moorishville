@@ -1,6 +1,5 @@
 const processPage = (pageInput) => {
     if(!pageInput) return []
-    console.log("processPage")
     const pages = []
     const parts = pageInput.split(',')
 
