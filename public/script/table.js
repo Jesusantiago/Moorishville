@@ -45,3 +45,28 @@ export const displayResultsOldBooks = (results) => {
     document.getElementById('resultsTable').scrollIntoView({ behavior: 'smooth' });
 };
 
+export const displayResultsImages = (results) => {
+    document.getElementById("resultsTable").style.display = "block";
+    const tbody = document.getElementById("resultsTable").getElementsByTagName("tbody")[0];
+    tbody.innerHTML = ""
+
+    console.log(results)
+    results.forEach(results => {
+        results.pages.forEach(page => {
+            const row = tbody.insertRow();
+
+            const nameCell = row.insertCell();
+            nameCell.innerHTML = results.book;
+
+            const linkCell = row.insertCell();
+            const link = document.createElement("a");
+            link.href = page.link;
+            link.target = "_blank";
+            link.innerHTML = "See Document"
+            linkCell.appendChild(link)
+        })
+    })
+
+    document.getElementById("resultsTable").scrollIntoView({behavior : "smooth"});
+}
+
