@@ -34,7 +34,6 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
         return;
     }
     
-    
     const pages = processPage(page);
 
     fetch("../Backout/oldIndexBooks.json")
@@ -65,10 +64,8 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             const dateMatch = (!search.startDate || new Date(item.date) >= new Date(search.startDate)) && (!search.endDate || new Date(item.date) <= new Date(search.endDate));
             const pageMatch = pages.length === 0 || pages.some(p => item.pages.some(ip => ip.page === p));
             const indexTypeMatch = !search.indexType || item.indexType.includes(search.indexType)
-            console.log(indexTypeMatch)
             const bookTypeMatch = !search.bookType || item.bookType.includes(search.bookType)
             const timeMatch = (mixed && item.mixed) || (temporary && item.mixed) || (either && item.either);
-            console.log(bookTypeMatch)
             return nameMatch && dateMatch && pageMatch && indexTypeMatch && bookTypeMatch && timeMatch
         }).map(item => {
             return {
@@ -81,6 +78,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             showModal("noResultsModal");
         } else {
             displayResultsOldBooks(results);
+            document.getElementById("discreimer").style.display = "none"
         }
     })
     .catch(error => console.error('Error fetching JSON:', error));
