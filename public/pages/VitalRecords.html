@@ -50,40 +50,112 @@
         <section class="main-content-form">
 
 
-            <form class="form-VitalRecords" action="">
+            <form class="form-VitalRecords">
 
                 <article class="article">
-                    <label class="label-text" for="">Name:
-                        <input type="text" name="" id="" placeholder="Enter your name" autofocus>
+                    <label class="label-text" for="name-vital">Name:
+                        <input type="text" name="name-vital" id="name-vital" placeholder="Enter your name" autofocus required>
                     </label>
                 </article>
                 <article class="article">
-                    <label class="label-text" for="">Date:
-                        <input type="date" name="" id="">
+                    <label class="label-text" for="date-vital">Date:
+                        <input type="date" name="date-vital" id="date-vital" required>
                     </label>
                 </article>
 
                 <article class="article">
-                    <label class="label-text" for=""> Text Type:
-                        <select name="" id="">
+                    <label class="label-text" for="type-vital"> Text Type:
+                        <select name="type-vital" id="type-vital">
                             <option value="">Select one</option>
-                            <option value="">Deed</option>
-                            <option value="">Plat</option>
-                            <option value="">Condo Plat</option>
-                            <option value="">Csca</option>
-                            <option value="">Article of Incorporation</option>
-                            <option value="">Highway Row</option>
-                            <option value="">Partnerships</option>
-                            <option value="">Ucc</option>
+                            <option value="Deed">Deed</option>
+                            <option value="Plat">Plat</option>
+                            <option value="Condo Plat">Condo Plat</option>
+                            <option value="Csca">Csca</option>
+                            <option value="Article of Incorporation">Article of Incorporation</option>
+                            <option value="Highway Row">Highway Row</option>
+                            <option value="Partnerships">Partnerships</option>
+                            <option value="Ucc">Ucc</option>
                         </select>
                     </label>
                 </article>
 
-                <button> <img src="../assets/1093183.svg" alt="Search's button"> Search </button>
+                <input type="submit" id="searchButton" value="search" class="btn">
 
             </form>
         </section>
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>File</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <section class="discreimer" id="discreimer">
+
+            <h2 class="main-title">NOTICE AND DISCREIMER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
+        </section>
+
+        <div id="incompleteFormModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Please fill out the form before searching.</p>
+            </div>
+        </div>
+
+        <div id="noResultsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>No files found to display.</p>
+            </div>
+        </div>
+
+
+
     </main>
+    <script type="module" src="../script/vitalRecords.js"></script>
 </body>
 
 </html>
