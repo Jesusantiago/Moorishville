@@ -414,6 +414,7 @@ table {
   width: 100%;
   border: 1px solid #000;
   display: none;
+  margin-bottom: 7rem;
 }
 
 th, td {
