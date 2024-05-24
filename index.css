@@ -126,6 +126,11 @@
   justify-content: center;
 }
 .header_text-nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #6d0606;
   font-weight: 500;

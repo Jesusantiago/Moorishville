@@ -5,7 +5,7 @@ import processPage from "./ProcessPage.js";
 
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault()
-
+    console.log("+------------------------------------------+")
     const name = document.getElementById("name-old").value.toLowerCase();
     const startDate = document.getElementById("start-date-old").value;
     const endDate = document.getElementById("end-date-old").value;
@@ -20,11 +20,11 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const pagePattern = /^([1-9](?:\s*[-,]\s*[1-9])*)(?:\s*[-,]\s*[1-9]\s*)*$/;
 
     if(!namePattern.test(name)){
-        alert("Name input formt is incorrect.")
-        return;
+    alert("Name input formt is incorrect.")
+    return;
     }
-    
-    if(!pagePattern.test(page)){
+
+    if (!pagePattern.test(page)) {
         alert("Page input formt is incorrect.")
         return;
     }
@@ -33,55 +33,56 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
         showModal("incompleteFormModal")
         return;
     }
-    
+
     const pages = processPage(page);
 
     fetch("../Backout/oldIndexBooks.json")
-    .then(response => {
-        if(!response.ok){
-            throw new Error("Network response was not ok " + response.statusText)
-        }
-        return response.json()
-    })
-    .then(jsonData => {
-        
-        let search = {
-            name,
-            startDate,
-            endDate,
-            pages,
-            indexType,
-            bookType,
-            time: {
-                mixed,
-                temporary,
-                either
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok " + response.statusText)
             }
-        }
+            return response.json()
+        })
+        .then(jsonData => {
 
-        const results = jsonData.filter(item => {
-            const nameMatch = !search.name || item.name.toLowerCase().includes(search.name)
-            const dateMatch = (!search.startDate || new Date(item.date) >= new Date(search.startDate)) && (!search.endDate || new Date(item.date) <= new Date(search.endDate));
-            const pageMatch = pages.length === 0 || pages.some(p => item.pages.some(ip => ip.page === p));
-            const indexTypeMatch = !search.indexType || item.indexType.includes(search.indexType)
-            const bookTypeMatch = !search.bookType || item.bookType.includes(search.bookType)
-            const timeMatch = (mixed && item.mixed) || (temporary && item.mixed) || (either && item.either);
-            return nameMatch && dateMatch && pageMatch && indexTypeMatch && bookTypeMatch && timeMatch
-        }).map(item => {
-            return {
-                ...item,
-                pages: item.pages.filter(p => pages.includes(p.page))
-            };
-        });
+            let search = {
+                name,
+                startDate,
+                endDate,
+                pages,
+                indexType,
+                bookType,
+                time: {
+                    mixed,
+                    temporary,
+                    either
+                }
+            }
 
-        if (results.length === 0) {
-            showModal("noResultsModal");
-        } else {
-            displayResultsOldBooks(results);
-            document.getElementById("discreimer").style.display = "none"
-        }
-    })
-    .catch(error => console.error('Error fetching JSON:', error));
+            const results = jsonData.filter(item => {
+                const nameMatch = !search.name || item.name.toLowerCase() === search.name
+                const dateMatch = (!search.startDate || new Date(item.date) >= new Date(search.startDate)) && (!search.endDate || new Date(item.date) <= new Date(search.endDate));
+                const pageMatch = pages.length === 0 || pages.some(p => item.pages.some(ip => ip.page === p));
+                const indexTypeMatch = !search.indexType || item.indexType.includes(search.indexType)
+                const bookTypeMatch = !search.bookType || item.bookType.includes(search.bookType)
+                const timeMatch = (mixed && item.mixed) || (temporary && item.temporary) || (either && item.either);
+
+                return nameMatch && dateMatch && pageMatch && indexTypeMatch && bookTypeMatch && timeMatch
+            }).map(item => {
+                return {
+                    ...item,
+                    pages: item.pages.filter(p => pages.includes(p.page))
+                };
+            });
+            console.log(results)
+            if (results.length === 0) {
+                showModal("noResultsModal");
+            } else {
+                displayResultsOldBooks(results);
+                document.getElementById("discreimer").style.display = "none"
+            }
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
 }
 
 )

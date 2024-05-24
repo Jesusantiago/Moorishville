@@ -40,7 +40,7 @@ document.getElementById("searchButton").addEventListener("click" , (e) => {
         console.log(search.date)
 
         const results = jsonData.filter(item => {
-            console.log(item.date)
+            console.log(item.name)
             const nameMatch = !search.name || item.name.toLowerCase().includes(search.name)
             const dateMatch = !search.date || new Date(item.date).toISOString().split('T')[0] === new Date(search.date).toISOString().split('T')[0];
             const typeMatch = !search.type || item.type.includes(search.type)

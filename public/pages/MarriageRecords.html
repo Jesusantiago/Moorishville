@@ -49,36 +49,97 @@
         
         <section class="main-content-form">
 
-            <form class="form-MarriageRecords" action="">
+            <form class="form-MarriageRecords">
                 <article class="article">
-                    <label class="label-text" for="">Name 1:
-                        <input type="text" name="" id="" placeholder="Enter your name" autofocus>
+                    <label class="label-text" for="nameOne-marriage">Name 1:
+                        <input type="text" name="nameOne-marriage" id="nameOne-marriage" placeholder="Enter your name" autofocus required>
                     </label>
                 </article>
                 <article class="article">
-                    <label class="label-text" for="">Name 2:
-                        <input type="text" name="" id="" placeholder="Enter your name">
+                    <label class="label-text" for="nameTwo-marriage">Name 2:
+                        <input type="text" name="nameTwo-marriage" id="nameTwo-marriage" placeholder="Enter your name" >
                     </label>
                 </article>
                 <article class="article">
-                    <label class="label-text" for="">Date:
-                        <input type="date" name="" id="">
+                    <label class="label-text" for="date-marriage">Date:
+                        <input type="date" name="date-marriage" id="date-marriage" required>
                     </label>
                 </article>
 
-                <button id="searchButton"> <img src="../assets/1093183.svg" alt="Search's Button">Search </button>
-
+                <input type="submit" id="searchButton" class="btn" value="search">
             </form>
         </section>
 
+        <section class="discreimer" id="discreimer">
 
-        <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="2000"
-            colors="primary:#545454,secondary:#848484" style="width:96px;height:96px">
-        </lord-icon>
+            <h2 class="main-title">NOTICE AND DISCREIMER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est doloribus a nemo, minus nesciunt rem
+                voluptates, magnam laudantium architecto animi et dolores quia odio. Corporis, deleniti! Saepe, amet
+                aspernatur.
+                Id ullam voluptates cumque ab nostrum velit nobis deserunt illo architecto, voluptatibus, saepe
+                praesentium? Dolor reprehenderit sapiente earum tempora repellat delectus aliquam eum natus adipisci
+                officia. Vitae aut eum provident?
+                Minima nihil nostrum, quidem pariatur aliquam exercitationem necessitatibus ab repudiandae distinctio
+                tempore officiis itaque, hic iure voluptas ad incidunt ipsum enim asperiores voluptates. Voluptatibus,
+                at! Architecto repellat nostrum ea adipisci?
+                Illum expedita provident aut ea possimus vitae vero fugiat rerum earum, neque iusto excepturi iure
+                accusantium quam inventore aliquid, obcaecati maxime sapiente voluptatibus repellendus consequuntur
+                tenetur. Neque rerum minima magnam!</p>
+        </section>
+
+        <div id="incompleteFormModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Please fill out the form before searching.</p>
+            </div>
+        </div>
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>File</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div id="noResultsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>No files found to display.</p>
+            </div>
+        </div>
 
     </main>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script type="module" src="../script/marriageRecord.js"></script>
 </body>
 
 </html>

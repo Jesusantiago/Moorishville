@@ -1,0 +1,56 @@
+[
+    {
+        "name": "John Smith",
+        "pages": [
+            {"page": 1, "link": "../images/MarriageRecords/J-1.pdf"},
+            {"page": 2, "link": "../images/MarriageRecords/J-2.pdf"},
+            {"page": 3, "link": "../images/MarriageRecords/j-3.pdf"}
+        ],
+        "date": "2024-05-01"
+    },
+    {
+        "name": "Mary Johnson",
+        "pages": [
+            {"page": 1, "link": "..images/MarriageRecords/M-1.pdf"},
+            {"page": 4, "link": "..images/MarriageRecords/M-2.pdf"},
+            {"page": 5, "link": "..images/MarriageRecords/M-3.pdf"}
+        ],
+        "date": "2024-05-01"
+    },
+    {
+        "name": "Michael Williams",
+        "pages": [
+            {"page": 1, "link": "..images/MarriageRecords/Mi-1.pdf"},
+            {"page": 2, "link": "..images/MarriageRecords/Mi-2.pdf"},
+            {"page": 3, "link": "..images/MarriageRecords/Mi-3.pdf"}
+        ],
+        "date": "2024-06-01"
+    },
+    {
+        "name": "Patricia Brown",
+        "pages": [
+            {"page": 1, "link": "../images/MarriageRecords/P-1.pdf"},
+            {"page": 2, "link": "../images/MarriageRecords/P-2.pdf"},
+            {"page": 3, "link": "../images/MarriageRecords/P-3.pdf"}
+        ],
+        "date": "2024-06-01"
+    },
+    {
+        "name": "Davpage Jones",
+        "pages": [
+            {"page": 1, "link": "../images/MarriageRecords/D-1.pdf"},
+            {"page": 2, "link": "../images/MarriageRecords/D-2.pdf"},
+            {"page": 3, "link": "../images/MarriageRecords/D-3.pdf"}
+        ],
+        "date": "2024-07-01"
+    },
+    {
+        "name": "Linda Garcia",
+        "pages": [
+            {"page": 1, "link": "../images/MarriageRecord/L-1.pdf"},
+            {"page": 2, "link": "../images/MarriageRecord/L-2.pdf"},
+            {"page": 3, "link": "../images/MarriageRecord/L-3.pdf"}
+        ],
+        "date": "2024-07-01"
+    }
+]

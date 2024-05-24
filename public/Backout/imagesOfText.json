@@ -1,362 +1,98 @@
 [
     {
         "type": "Deed",
-        "book": "Libro de Escrituras de Propiedad",
+        "book": "Property Deed Book",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/PDB-1.pdf"},
+            {"page": 2, "link": "../images/ImagesOfText/PDB-2.pdf"},
+            {"page": 3, "link": "../images/ImagesOfText/PDB-3.pdf"},
+            {"page": 4, "link": "../images/ImagesOfText/PDB-4.pdf"},
+            {"page": 5, "link": "../images/ImagesOfText/PDB-5.pdf"},
+            {"page": 6, "link": "../images/ImagesOfText/PDB-6.pdf"},
+            {"page": 7, "link": "../images/ImagesOfText/PDB-7.pdf"},
+            {"page": 8, "link": "../images/ImagesOfText/PDB-8.pdf"},
+            {"page": 9, "link": "../images/ImagesOfText/PDB-9.pdf"}
         ]
     },
     {
         "type": "Plat",
-        "book": "Plat del vecindario",
+        "book": "Neighborhood Plat",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/NP-2.pdf"},
+            {"page": 2, "link": "../images/ImagesOfText/NP-2.pdf"},
+            {"page": 3, "link": "../images/ImagesOfText/NP-3.pdf"},
+            {"page": 4, "link": "../images/ImagesOfText/NP-4.pdf"},
+            {"page": 5, "link": "../images/ImagesOfText/NP-5.pdf"}
         ]
     },
     {
         "type": "Condo Plat",
-        "book": "Plano del Condominio",
+        "book": "Condominium Plan",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/CP-1.pdf"},
+            {"page": 3, "link": "../images/ImagesOfText/CP-3.pdf"},
+            {"page": 5, "link": "../images/ImagesOfText/CP-5.pdf"},
+            {"page": 7, "link": "../images/ImagesOfText/CP-7.pdf"}
+
         ]
     },
     {
         "type": "Csca",
-        "book": "Acta de la Asociación de Condominios",
+        "book": "Condominium Association Minutes",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 2, "link": "../images/ImagesOfText/CAM-2.pdf"},
+            {"page": 4, "link": "../images/ImagesOfText/CAM-4.pdf"},
+            {"page": 6, "link": "../images/ImagesOfText/CAM-6.pdf"}
         ]
     },
     {
+
         "type": "Articles of Incorporation",
-        "book": "Artículos de Incorporación",
+        "book": "Articles of Incorporation",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/AOI-1.pd"},
+            {"page": 2, "link": "../images/ImagesOfText/AOI-2.pd"},
+            {"page": 5, "link": "../images/ImagesOfText/AOI-5.pd"}
         ]
     },
     {
+
         "type": "Partnerships",
-        "book": "Contratos de Asociación",
+        "book": "Partnership Agreements",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 3, "link": "../images/ImagesOfText/PA-3.pd"},
+            {"page": 5, "link": "../images/ImagesOfText/PA-5.pd"}
         ]
     },
     {
+
         "type": "Ucc",
-        "book": "Código de Comercio Uniforme",
+        "book": "Uniform Commercial Code",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/UCC-1.pd"},
+            {"page": 2, "link": "../images/ImagesOfText/UCC-2.pd"},
+            {"page": 3, "link": "../images/ImagesOfText/UCC-3.pd"},
+            {"page": 4, "link": "../images/ImagesOfText/UCC-4.pd"},
+            {"page": 5, "link": "../images/ImagesOfText/UCC-5.pd"},
+            {"page": 6, "link": "../images/ImagesOfText/UCC-6.pd"},
+            {"page": 7, "link": "../images/ImagesOfText/UCC-7.pd"}
+
+
         ]
     },
     {
+
         "type": "Highway Row",
-        "book": "Documentos de Expropiación de Carreteras",
+        "book": "Highway Expropriation Documents",
         "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Deed",
-        "book": "Libro de Escrituras de Propiedad 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Plat",
-        "book": "Plat del vecindario 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Condo Plat",
-        "book": "Plano del Condominio 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Csca",
-        "book": "Acta de la Asociación de Condominios 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Articles of Incorporation",
-        "book": "Artículos de Incorporación 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Partnerships",
-        "book": "Contratos de Asociación 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Ucc",
-        "book": "Código de Comercio Uniforme 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Highway Row",
-        "book": "Documentos de Expropiación de Carreteras 2",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Deed",
-        "book": "Libro de Escrituras de Propiedad 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Plat",
-        "book": "Plat del vecindario 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Condo Plat",
-        "book": "Plano del Condominio 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Csca",
-        "book": "Acta de la Asociación de Condominios 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Articles of Incorporation",
-        "book": "Artículos de Incorporación 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Partnerships",
-        "book": "Contratos de Asociación 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Ucc",
-        "book": "Código de Comercio Uniforme 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
-        ]
-    },
-    {
-        "type": "Highway Row",
-        "book": "Documentos de Expropiación de Carreteras 3",
-        "pages": [
-            {"page": 1, "link": "https://google.com"},
-            {"page": 2, "link": "https://google.com"},
-            {"page": 3, "link": "https://google.com"},
-            {"page": 4, "link": "https://google.com"},
-            {"page": 5, "link": "https://google.com"},
-            {"page": 6, "link": "https://google.com"},
-            {"page": 7, "link": "https://google.com"},
-            {"page": 8, "link": "https://google.com"},
-            {"page": 9, "link": "https://google.com"}
+            {"page": 1, "link": "../images/ImagesOfText/HR-1.pdf"},
+            {"page": 2, "link": "../images/ImagesOfText/HR-2.pdf"},
+            {"page": 3, "link": "../images/ImagesOfText/HR-3.pdf"},
+            {"page": 4, "link": "../images/ImagesOfText/HR-4.pdf"},
+            {"page": 5, "link": "../images/ImagesOfText/HR-5.pdf"},
+            {"page": 6, "link": "../images/ImagesOfText/HR-6.pdf"},
+            {"page": 7, "link": "../images/ImagesOfText/HR-7.pdf"},
+            {"page": 8, "link": "../images/ImagesOfText/HR-8.pdf"}
         ]
     }
 ]
