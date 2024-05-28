@@ -1,5 +1,5 @@
 import showModal from "./modalForm.js"
-import { displayResultsOldBooks } from "./table.js"
+import { displayResultsMarriageTwo, displayResultsOldBooks } from "./table.js"
 
 console.log("Marriage Records")
 
@@ -46,23 +46,37 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             const dateMatch = new Date(item.date).toISOString().split('T')[0] === new Date(search.date).toISOString().split('T')[0];
             return dateMatch && (nameOneMatch || nameTwoMatch)
         })
-        let sharedResults = results;
-
-            if (search.nameTwo) {
-                const nameOneResults
-              } else if (dateMatch && search.nameTwo) {
-                return item.name.toLowerCase().includes(search.nameTwo);
-              } else {
-                return false;
-              }
         console.log(results)
-        if(results.length === 0){
-            showModal("noResultModal")
-        } else {
-            displayResultsOldBooks(results)
-            document.getElementById("discreimer").style.display = "none"
+        let values = []
+        if (search.nameTwo) {
+            let [userOne, userTwo] = results;
+            const { pages : pagesOne } = userOne
+            const { pages : pagesTwo } = userTwo
+            
+            for( const valueOne of pagesOne){
+                // console.log(valueOne)
+                for ( const valueTwo of pagesTwo){
+                        if(valueOne.page == valueTwo.page){
+                            values.push(valueTwo)
+                        }
+                }
+            }   
         }
-        console.log(results)
+
+        console.log(values)
+        if (results.length === 0) {
+            showModal("noResultModal");
+        } else if(values.length === 0) {
+            console.log("values 0")
+            displayResultsOldBooks(results);
+            document.getElementById("discreimer").style.display = "none";
+        } else {
+            console.log("value results")
+            displayResultsMarriageTwo(values)
+            document.getElementById("discreimer").style.display = "none";
+            
+        }
+
     }).catch(err=> {
         console.log("Error fetching JSON: ", err)
     })

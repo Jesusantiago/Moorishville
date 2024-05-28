@@ -69,13 +69,13 @@
         "type": "Ucc",
         "book": "Uniform Commercial Code",
         "pages": [
-            {"page": 1, "link": "../images/ImagesOfText/UCC-1.pd"},
-            {"page": 2, "link": "../images/ImagesOfText/UCC-2.pd"},
-            {"page": 3, "link": "../images/ImagesOfText/UCC-3.pd"},
-            {"page": 4, "link": "../images/ImagesOfText/UCC-4.pd"},
-            {"page": 5, "link": "../images/ImagesOfText/UCC-5.pd"},
-            {"page": 6, "link": "../images/ImagesOfText/UCC-6.pd"},
-            {"page": 7, "link": "../images/ImagesOfText/UCC-7.pd"}
+            {"page": 1, "link": "../images/ImagesOfText/UCC-1.pdf"},
+            {"page": 2, "link": "../images/ImagesOfText/UCC-2.pdf"},
+            {"page": 3, "link": "../images/ImagesOfText/UCC-3.pdf"},
+            {"page": 4, "link": "../images/ImagesOfText/UCC-4.pdf"},
+            {"page": 5, "link": "../images/ImagesOfText/UCC-5.pdf"},
+            {"page": 6, "link": "../images/ImagesOfText/UCC-6.pdf"},
+            {"page": 7, "link": "../images/ImagesOfText/UCC-7.pdf"}
 
 
         ]

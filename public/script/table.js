@@ -45,6 +45,28 @@ export const displayResultsOldBooks = (results) => {
     document.getElementById('resultsTable').scrollIntoView({ behavior: 'smooth' });
 };
 
+export const displayResultsMarriageTwo = (results) => {
+    document.getElementById("resultsTable").style.display = "block"
+    const tbody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+    tbody.innerHTML = '';
+
+    results.forEach(result => {
+        const row = tbody.insertRow();
+        const nameCell = row.insertCell()
+        nameCell.innerText = result.page;
+
+
+        const fileCell = row.insertCell();
+        const link = document.createElement('a');
+        link.href = result.link; 
+        link.target = '_blank';
+        link.innerText = "See Document";
+        fileCell.appendChild(link);
+    });
+
+    document.getElementById('resultsTable').scrollIntoView({ behavior: 'smooth' });
+}
+
 export const displayResultsImages = (results) => {
     document.getElementById("resultsTable").style.display = "block";
     const tbody = document.getElementById("resultsTable").getElementsByTagName("tbody")[0];

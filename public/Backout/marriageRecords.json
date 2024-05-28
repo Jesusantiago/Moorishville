@@ -12,8 +12,8 @@
         "name": "Mary Johnson",
         "pages": [
             {"page": 1, "link": "..images/MarriageRecords/M-1.pdf"},
-            {"page": 4, "link": "..images/MarriageRecords/M-2.pdf"},
-            {"page": 5, "link": "..images/MarriageRecords/M-3.pdf"}
+            {"page": 5, "link": "..images/MarriageRecords/M-2.pdf"},
+            {"page": 2, "link": "..images/MarriageRecords/M-3.pdf"}
         ],
         "date": "2024-05-01"
     },
