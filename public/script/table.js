@@ -72,7 +72,6 @@ export const displayResultsImages = (results) => {
     const tbody = document.getElementById("resultsTable").getElementsByTagName("tbody")[0];
     tbody.innerHTML = ""
 
-    console.log(results)
     results.forEach(results => {
         results.pages.forEach(page => {
             const row = tbody.insertRow();
