@@ -2,7 +2,7 @@
     {
         "name": "John Smith",
         "pages": [
-            {"page": 1, "link": "../images/MarriageRecords/J-1.pdf"},
+            {"page": 1, "link": "../images/MarriageRecord/J-1.pdf"},
             {"page": 2, "link": "../images/MarriageRecords/J-2.pdf"},
             {"page": 3, "link": "../images/MarriageRecords/j-3.pdf"}
         ],
