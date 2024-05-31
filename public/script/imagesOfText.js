@@ -2,11 +2,21 @@ import processPage from "./ProcessPage.js";
 import showModal from "./modalForm.js";
 import { displayResultsImages } from "./table.js";
 
-console.log("images of text");
+//@funtion {searchButton#click} - Listen to the click event of the html form when the user does the search.
+//@regex {pagePattern} - regex expression that checks the text input of the name. 
+//@regex {namePattern} - regex expression that checks the text input of the page.
+    //Rules:
+    //- Any number value.
+    //- May contain , or - to separate numbers
+// @funtion {results} - Compares all data entered with the data stored in the database
+// @comp {showModal} - Activates the modal to display when an error occurs with the search.
+// @comp {displayResultsReal} - Displays the results returned by the results function
+// @funtion {processPage} - Evaluates and separates all values of the input numbers
 
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault();
 
+    document.getElementById("resultsTable").style.display = "none"
     const type = document.getElementById("deedType-images").value;
     const book = document.getElementById("bookName-images").value.toLowerCase();
     const page = document.getElementById("page-images").value;
@@ -16,7 +26,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const pagePattern = /^(?:[1-9]\d*|\d+)(?:\s*-\s*(?:[1-9]\d*|\d+)|,\s*(?:[1-9]\d*|\d+))*$/;
 
     if (!namePattern.test(book)) {
-        alert("Name input format is incorrect.");
+        showModal("errorInputName")
         return;
     }
 
@@ -28,7 +38,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     let pages = [];
     if (page.length > 0 && page !== "0") {
         if (!pagePattern.test(page)) {
-            alert("Page input format is incorrect.");
+            showModal("errorInputPages")
             return;
         }
         pages = processPage(page);
@@ -68,7 +78,10 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
                 document.getElementById("discreimer").style.display = "none";
             }
         })
-        .catch(err => console.log("Error Fetch JSON: ", err));
+        .catch(err => {
+            showModal("errorFetch")
+            console.log("Error Fetch JSON: ", err)
+        });
 });
 
 

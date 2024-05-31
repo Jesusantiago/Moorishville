@@ -1,9 +1,21 @@
-import showModal from "./modalForm.js";
+import showModal from "./modalForm.js"; 
 import { displayResultsReal } from "./table.js"
+
+//@funtion {searchButton#click} - Listen to the click event of the html form when the user does the search.
+//@regex {namePattern} - regex expression that checks the text input of the name. 
+    //Rules:
+        //- Any letter value.
+        //- No numeric value can be entered.
+//
+// @funtion {results} - Compares all data entered with the data stored in the database
+// @comp {showModal} - Activates the modal to display when an error occurs with the search.
+// @comp {displayResultsReal} - Displays the results returned by the results function
+
 
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault();
 
+    document.getElementById('resultsTable').style.display = "none"
     const name = document.getElementById("name").value.toLowerCase();
     const startDate = document.getElementById("start-date-real").value;
     const endDate = document.getElementById("end-date-real").value;
@@ -16,7 +28,7 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     const namePattern = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
 
     if(!namePattern.test(name)){
-        alert("Name input formt is incorrect.")
+        showModal("errorInputName")
         return;
     }
 
@@ -64,5 +76,8 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
             }
 
         })
-        .catch(err => console.error(err.message))
+        .catch(err => {
+            showModal("errorFetch")
+            console.error(err.message)
+        })
 })

@@ -42,7 +42,8 @@
 }
 @media screen and (max-width: 1023px) {
   .header {
-    max-height: 5rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 .header_logo {
@@ -75,7 +76,7 @@
   justify-content: space-between;
 }
 .header_text-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.8rem;
   color: #bb991d;
   font-family: "Arapey", serif;
@@ -83,6 +84,12 @@
   letter-spacing: 0.2em;
   margin: 0;
   padding: 1rem 0 0;
+  font-weight: 500;
+}
+@media screen and (max-width: 1023px) {
+  .header_text-title {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .header_text-title {
@@ -143,6 +150,11 @@
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 1023px) {
+  .header_text-span {
+    display: none;
+  }
 }
 @media screen and (max-width: 576px) {
   .header_text-span {

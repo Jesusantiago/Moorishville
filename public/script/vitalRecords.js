@@ -1,22 +1,25 @@
 import showModal from "./modalForm.js";
 import { displayResultsReal } from "./table.js";
 
-console.log("vital records")
+//@funtion {searchButton#click} - Listen to the click event of the html form when the user does the search.
+//@regex {pagePattern} - regex expression that checks the text input of the name. 
+//@regex {pagePattern} - regex expression that checks the text input of the name. 
+// @funtion {results} - Compares all data entered with the data stored in the database
+// @comp {showModal} - Activates the modal to display when an error occurs with the search.
+// @comp {displayResultsReal} - Displays the results returned by the results function
+
 
 document.getElementById("searchButton").addEventListener("click" , (e) => {
     e.preventDefault()
 
-
+    document.getElementById("resultsTable").style.display = "none"
     const name = document.getElementById("name-vital").value.toLowerCase();
     const date = document.getElementById("date-vital").value;
     const type = document.getElementById("type-vital").value;
-    console.log(name)
-    console.log(date)
-    console.log(type)
 
     const namePattern = /^[A-Za-z]+( [A-Za-z]+)?$/;
     if(!namePattern.test(name)){
-        alert("Name input formt is incorrect.")
+        showModal("errorInputName")
         return;
     }
 
@@ -34,21 +37,15 @@ document.getElementById("searchButton").addEventListener("click" , (e) => {
         return response.json()
     })
     .then(jsonData => {
-
         let search = { name, date, type }
 
-        console.log(search.date)
-
         const results = jsonData.filter(item => {
-            console.log(item.name)
             const nameMatch = !search.name || item.name.toLowerCase().includes(search.name)
             const dateMatch = !search.date || new Date(item.date).toISOString().split('T')[0] === new Date(search.date).toISOString().split('T')[0];
             const typeMatch = !search.type || item.type.includes(search.type)
 
             return nameMatch && dateMatch && typeMatch
         })
-
-        console.log(results)
 
         if(results.length === 0){
             showModal("noResultsModal")
@@ -57,5 +54,8 @@ document.getElementById("searchButton").addEventListener("click" , (e) => {
             document.getElementById("discreimer").style.display = "none"
         }
     })
-    .catch(err => console.log("Error fetching JSON: " + err))
+    .catch(err => {
+        showModal("errorFetch")
+        console.log("Error fetching JSON: " + err)
+    })
 })
