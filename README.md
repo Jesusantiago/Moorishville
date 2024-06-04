@@ -2,15 +2,15 @@
 
 ###
 
-<h3 align="left">Sistema de búsqueda de archivos dentro de la base de datos local.</h3>
+<h3 align="left">File search system within the local database.</h3>
 
 ###
 
-<p align="left">En esta carpeta encontrará todos los archivos relacionados al proyecto. El cual se encuentra dividido en un sistema de carpetas responsable de cada funcionamiento del sistema.<br><br>Por favor no modifique ningún archivo de la siguientes carpertas:<br>--pages<br>--script<br>--style<br><br>y los siguiente archivo.<br>-- index.html<br><br>Cualquier modificación puede ser contraproducente para el optimo funcionamiento del sistema.</p>
+<p align="left">In this folder you will find all the files related to the project. It is divided into a system of folders responsible for each operation of the system.<br><br>Please do not modify any files in the following folders:<br>--pages<br>--script<br>--style<br><br>and the following file.<br>-- index.html<br><br>Any modification may be counterproductive to the optimal functioning of the system.</p>
 
 ###
 
-<h3 align="left">Responsabilidad de carpetas:</h3>
+<h3 align="left">Responsibility for folders:</h3>
 
 ###
 
@@ -18,7 +18,7 @@
 
 ###
 
-<p align="left">Contiene los la data de los archivos a mostrar.<br><br>*esta se encuentra dividida por responsabilidad de buscador.</p>
+<p align="left">Contains the data of the files to be displayed.<br><br>*This is divided by browser responsibility.</p>
 
 ###
 
@@ -26,15 +26,15 @@
 
 ###
 
+<p align="left">Contains the files to be displayed.<br><br>*this is divided by searcher responsibility</p>
+
+###
+
 <h4 align="left">Pages</h4>
 
 ###
 
-<p align="left">Contiene los archivos a mostrar.<br><br>*esta se encuentra dividida por responsabilidad de buscador</p>
-
-###
-
-<p align="left">Contiene el codigo de las distintas páginas.<br><br>*En esta se encuentran un archivo por cada buscador.</p>
+<p align="left">It contains the code of the different pages.<br><br>*this is divided by searcher responsibility</p>
 
 ###
 
@@ -42,7 +42,7 @@
 
 ###
 
-<p align="left">Contiene el código de lógica que hay detrás de cada buscador.<br><br>*esta se encuentra dividida por un archivos por buscador, mas archivos que comparten algunos buscadores.</p>
+<p align="left">It contains the logic code behind each search engine.<br><br>*This is divided by one file per search engine, plus files shared by some search engines.</p>
 
 ###
 
@@ -50,7 +50,7 @@
 
 ###
 
-<p align="left">Contiene los archivos de estilos que tiene cada buscador.</p>
+<p align="left">Contains the style files that each browser has.</p>
 
 ###
 
@@ -58,11 +58,11 @@
 
 ###
 
-<p align="left">Este es el archivo de entrada al sistema en este archivo se encuentra el desligue de responsabilidad.</p>
+<p align="left">This is the input file to the system, in this file you will find the liability release.</p>
 
 ###
 
-<h3 align="left">Tecnologias</h3>
+<h3 align="left">Technologies</h3>
 
 ###
 
@@ -76,10 +76,10 @@
 
 ###
 
-<h4 align="left">Autor</h4>
+<h4 align="left">Author</h4>
 
 ###
 
-<p align="left">Jesus Santiago LinkedIn</p>
+<p align="left">Jesus Santiago,([email] (jesuantiago420@gmail.com)), ([LinkedIn](https://www.linkedin.com/in/jesuscsantiago/))  </p>
 
 ###
