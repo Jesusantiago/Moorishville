@@ -80,6 +80,6 @@
 
 ###
 
-<p align="left">Jesus Santiago,([email] (jesuantiago420@gmail.com)), ([LinkedIn](https://www.linkedin.com/in/jesuscsantiago/))  </p>
+<p align="left">Jesus Santiago,[email] (jesuantiago420@gmail.com), [LinkedIn](https://www.linkedin.com/in/jesuscsantiago/)  </p>
 
 ###
