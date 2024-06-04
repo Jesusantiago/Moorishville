@@ -10,7 +10,7 @@ import { displayResultsMarriageTwo, displayResultsOldBooks } from "./table.js"
 document.getElementById("searchButton").addEventListener("click", (e) => {
     e.preventDefault()
     
-    document.getElementById("resultsTablet").style.display = "none"
+    document.getElementById("resultsTable").style.display = "none"
     const nameOne = document.getElementById("nameOne-marriage").value.toLowerCase();
     const nameTwo = document.getElementById("nameTwo-marriage").value.toLowerCase();
     const date = document.getElementById("date-marriage").value 

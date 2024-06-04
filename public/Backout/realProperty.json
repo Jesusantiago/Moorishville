@@ -7,7 +7,8 @@
         "mixed": true,
         "temporary": false,
         "either": false,
-        "link": "../images/RealProperty/test.pdf"
+        "link": "../images/RealProperty/test.pdf",
+        "file": "Divine Surface # 0001"
     },
     {
         "name": "Cedric Miller El",
@@ -17,7 +18,8 @@
         "mixed": true,
         "temporary": false,
         "either": false,
-        "link": "../images/RealProperty/test.pdf"
+        "link": "../images/RealProperty/test.pdf",
+        "file": "Divine Surface # 0001"
     },
     {
         "name": "Alice Johnson",
@@ -27,7 +29,9 @@
         "mixed": false,
         "temporary": false,
         "either": true,
-        "link": "https://www.pexels.com/es-es/foto/cachorro-de-pelo-corto-marron-y-blanco-1805164/"
+        "link": "https://www.pexels.com/es-es/foto/cachorro-de-pelo-corto-marron-y-blanco-1805164/",
+        "file": "Divine Surface # ...."
+
     },
     {
         "name": "Bob Brown",
@@ -37,6 +41,7 @@
         "mixed": true,
         "temporary": false,
         "either": false,
-        "link": "https://www.pexels.com/es-es/foto/pug-negro-adulto-1851164/"
+        "link": "https://www.pexels.com/es-es/foto/pug-negro-adulto-1851164/",
+        "file": "Divine Surface # ...."
     }
 ]

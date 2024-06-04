@@ -6,7 +6,7 @@ export const displayResultsReal = (results) => {
     results.forEach(result => {
         const row = tbody.insertRow();
         const nameCell = row.insertCell()
-        nameCell.innerText = result.name;
+        nameCell.innerText = result.file;
 
 
         const fileCell = row.insertCell();
@@ -30,7 +30,7 @@ export const displayResultsOldBooks = (results) => {
             const row = tbody.insertRow();
 
             const nameCell = row.insertCell();
-            nameCell.innerText = result.name;
+            nameCell.innerText = result.file;
 
             const linkCell = row.insertCell();
             const link = document.createElement('a');
@@ -53,7 +53,7 @@ export const displayResultsMarriageTwo = (results) => {
     results.forEach(result => {
         const row = tbody.insertRow();
         const nameCell = row.insertCell()
-        nameCell.innerText = result.page;
+        nameCell.innerText = result.file;
 
 
         const fileCell = row.insertCell();
@@ -77,7 +77,7 @@ export const displayResultsImages = (results) => {
             const row = tbody.insertRow();
 
             const nameCell = row.insertCell();
-            nameCell.innerHTML = results.book;
+            nameCell.innerHTML = results.file;
 
             const linkCell = row.insertCell();
             const link = document.createElement("a");

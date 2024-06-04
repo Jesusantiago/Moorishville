@@ -12,7 +12,8 @@
             {"page": 7, "link": "../images/ImagesOfText/PDB-7.pdf"},
             {"page": 8, "link": "../images/ImagesOfText/PDB-8.pdf"},
             {"page": 9, "link": "../images/ImagesOfText/PDB-9.pdf"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
         "type": "Plat",
@@ -23,7 +24,8 @@
             {"page": 3, "link": "../images/ImagesOfText/NP-3.pdf"},
             {"page": 4, "link": "../images/ImagesOfText/NP-4.pdf"},
             {"page": 5, "link": "../images/ImagesOfText/NP-5.pdf"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
         "type": "Condo Plat",
@@ -34,7 +36,8 @@
             {"page": 5, "link": "../images/ImagesOfText/CP-5.pdf"},
             {"page": 7, "link": "../images/ImagesOfText/CP-7.pdf"}
 
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
         "type": "Csca",
@@ -43,7 +46,8 @@
             {"page": 2, "link": "../images/ImagesOfText/CAM-2.pdf"},
             {"page": 4, "link": "../images/ImagesOfText/CAM-4.pdf"},
             {"page": 6, "link": "../images/ImagesOfText/CAM-6.pdf"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
 
@@ -53,7 +57,8 @@
             {"page": 1, "link": "../images/ImagesOfText/AOI-1.pd"},
             {"page": 2, "link": "../images/ImagesOfText/AOI-2.pd"},
             {"page": 5, "link": "../images/ImagesOfText/AOI-5.pd"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
 
@@ -62,7 +67,8 @@
         "pages": [
             {"page": 3, "link": "../images/ImagesOfText/PA-3.pd"},
             {"page": 5, "link": "../images/ImagesOfText/PA-5.pd"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
 
@@ -78,7 +84,8 @@
             {"page": 7, "link": "../images/ImagesOfText/UCC-7.pdf"}
 
 
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     },
     {
 
@@ -93,6 +100,7 @@
             {"page": 6, "link": "../images/ImagesOfText/HR-6.pdf"},
             {"page": 7, "link": "../images/ImagesOfText/HR-7.pdf"},
             {"page": 8, "link": "../images/ImagesOfText/HR-8.pdf"}
-        ]
+        ],
+        "file" : "Replace this, by the name you want to be displayed"
     }
 ]

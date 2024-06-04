@@ -298,6 +298,12 @@
     display: none;
   }
 }
+.main-content .discreimer {
+  font-family: "Arapey", serif;
+}
+.main-content .discreimer p {
+  font-family: "Montserrat", sans-serif;
+}
 
 @media screen and (max-width: 1023px) {
   .main_tablet {
@@ -455,6 +461,14 @@ th {
 body {
   zoom: 100%;
   background-color: #f2f2f2;
+}
+
+.company {
+  font-size: 3rem;
+}
+
+.company-span {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -3,60 +3,70 @@
         "name": "Alice Johnson",
         "date": "2024-05-05",
         "type": "Deed",
-        "link": "../images/VitalRecords/Alice.pdf"
+        "link": "../images/VitalRecords/Alice.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Bob Smith",
         "date": "2024-05-02",
         "type": "Plat",
-        "link": "../images/VitalRecords/BobSmith.pdf"
+        "link": "../images/VitalRecords/BobSmith.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Carmen Contreras",
         "date": "2024-05-03",
         "type": "Condo Plat",
-        "link": "../images/VitalRecords/Carmen.pdf"
+        "link": "../images/VitalRecords/Carmen.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Diego Martinez",
         "date": "2024-05-04",
         "type": "Csca",
-        "link": "../images/VitalRecords/Diego.pdf"
+        "link": "../images/VitalRecords/Diego.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Elena Gomez",
         "date": "2024-05-05",
         "type": "Article of Incorporation",
-        "link": "../images/VitalRecords/Elena.pdf"
+        "link": "../images/VitalRecords/Elena.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Fernando Alvarez",
         "date": "2024-05-06",
         "type": "Highway Row",
-        "link": "../images/VitalRecords/Fernando.pdf"
+        "link": "../images/VitalRecords/Fernando.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Gabriela Sanchez",
         "date": "2024-05-07",
         "type": "Partnerships",
-        "link": "../images/VitalRecords/Hector.pdf"
+        "link": "../images/VitalRecords/Hector.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Hector Ruiz",
         "date": "2024-05-08",
         "type": "Ucc",
-        "link": "../images/VitalRecords/Jorge.pdf"
+        "link": "../images/VitalRecords/Jorge.pdf",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Isabel Fernandez",
         "date": "2024-05-09",
         "type": "Deed",
-        "link": "../images/VitalRecords/"
+        "link": "../images/VitalRecords/",
+        "file": "Replace this, by the name you want to be displayed"
     },
     {
         "name": "Jorge Lopez",
         "date": "2024-05-10",
         "type": "Plat",
-        "link": "../images/VitalRecords/"
+        "link": "../images/VitalRecords/",
+        "file": "Replace this, by the name you want to be displayed"
     }
 ]
